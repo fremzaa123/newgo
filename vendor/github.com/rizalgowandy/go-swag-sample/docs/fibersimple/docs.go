@@ -116,7 +116,7 @@ var SwaggerInfo = swaggerInfo{
 	Version:     "2.0",
 	Host:        "localhost:3000",
 	BasePath:    "/",
-	Schemes:     []string{"http"},
+	Schemes:     []string{"https"},
 	Title:       "API TEST GOLANG",
 	Description: "server.",
 }
