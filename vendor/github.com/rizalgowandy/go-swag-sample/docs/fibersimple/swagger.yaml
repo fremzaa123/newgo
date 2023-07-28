@@ -51,9 +51,9 @@ components:
         Person:
             type: object
             properties:
-                r_id:
+                Rid:
                     type: integer
-                r_agent_id:
+                Ragid:
                     type: integer
-                r_status:
+                Rstatus:
                     type: integer

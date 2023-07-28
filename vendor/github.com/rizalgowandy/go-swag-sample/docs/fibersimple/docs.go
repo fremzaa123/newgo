@@ -57,23 +57,29 @@ var doc = `{
                 }
             }
         },
-            "/users": {
-                "get": {
-                    "summary": "Query and display data",
-                    "description": "Query data from the database and display it.",
-                    "tags": [
-                        "TEST"
-                    ],
-                    "responses": {
-                        "200": {
-                            "description": "Successful operation",
-                            "content": {
-                                "application/json": {
-                                    "schema": {
-                                        "type": "array",
-                                        "items": {
-                                            "$ref": "#/components/schemas/Person"
-                                        }
+        "/users": {
+            "get": {
+                "consumes": [
+                    "*/*"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "tags"
+                ],
+                "summary": "Query and display data",
+                "description": "Query data from the database and display it.",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Person"
                                     }
                                 }
                             }
@@ -81,25 +87,24 @@ var doc = `{
                     }
                 }
             }
-        },
-        "components": {
-            "schemas": {
-                "Person": {
-                    "type": "object",
-                    "properties": {
-                        "Rid": {
-                            "type": "integer"
-                        },
-                        "Ragid": {
-                            "type": "integer"
-                        },
-                        "Rstatus": {
-                            "type": "integer"
-                        }
-                    }
+        }
+    },
+    "definitions": {
+        "Person": {
+            "type": "object",
+            "properties": {
+                "Rid": {
+                    "type": "integer"
+                },
+                "Ragid": {
+                    "type": "integer"
+                },
+                "Rstatus": {
+                    "type": "integer"
                 }
             }
         }
+    }
 }`
 
 type swaggerInfo struct {
@@ -116,7 +121,7 @@ var SwaggerInfo = swaggerInfo{
 	Version:     "2.0",
 	Host:        "localhost:3000",
 	BasePath:    "/",
-	Schemes:     []string{"https"},
+	Schemes:     []string{"http"},
 	Title:       "API TEST GOLANG",
 	Description: "server.",
 }
