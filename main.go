@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"newgo-app/connect"
+	connect "newgo-app/database"
 
 	_ "github.com/lib/pq"
 )
