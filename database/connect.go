@@ -34,3 +34,24 @@ func ConnectDB() (*sql.DB, error) {
 	fmt.Println("เชื่อมต่อฐานข้อมูลสำเร็จ!")
 	return db, nil
 }
+
+// // GetUsers คืนค่าข้อมูลผู้ใช้ทั้งหมด
+// func GetUsers(db *sql.DB) ([]string, error) {
+// 	rows, err := db.Query("SELECT * FROM bom_tb_agent")
+// 	if err != nil {
+// 		return nil, err
+// 	}
+// 	defer rows.Close()
+
+// 	var users []string
+// 	for rows.Next() {
+// 		var name string
+// 		err := rows.Scan(&name)
+// 		if err != nil {
+// 			return nil, err
+// 		}
+// 		users = append(users, name)
+// 	}
+
+// 	return users, nil
+// }
