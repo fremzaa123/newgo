@@ -56,6 +56,45 @@ var doc = `{
                     }
                 }
             }
+        },
+        "/users": {
+            "get": {
+                "summary": "Query and display data",
+                "description": "Query data from the database and display it.",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Person"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Person": {
+                "type": "object",
+                "properties": {
+                    "Rid": {
+                        "type": "integer"
+                    },
+                    "Ragid": {
+                        "type": "integer"
+                    },
+                    "Rstatus": {
+                        "type": "integer"
+                    }
+                }
+            }
         }
     }
 }`
@@ -72,7 +111,7 @@ type swaggerInfo struct {
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = swaggerInfo{
 	Version:     "2.0",
-	Host:        "localhost:3000",
+	Host:        "127.0.0.1:3000",
 	BasePath:    "/",
 	Schemes:     []string{"http"},
 	Title:       "API TEST GOLANG",

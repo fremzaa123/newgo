@@ -34,7 +34,7 @@ func main() {
 	app.Get("/users", getUsersHandler(db))
 
 	// Route Swagger
-	app.Get("/swagger/*", fiberSwagger.FiberWrapHandler()) // เปลี่ยนให้ใช้ middleware Swagger จาก fiber-swagger/v2
+	app.Get("/sc/docs/*", fiberSwagger.FiberWrapHandler()) // เปลี่ยนให้ใช้ middleware Swagger จาก fiber-swagger/v2
 
 	// เริ่มเซิร์ฟเวอร์
 	app.Listen(":3000")
