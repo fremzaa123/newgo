@@ -9,9 +9,9 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	fiberSwagger "github.com/swaggo/fiber-swagger"
-
 	_ "github.com/lib/pq"
+	_ "github.com/rizalgowandy/go-swag-sample/docs/fibersimple"
+	fiberSwagger "github.com/swaggo/fiber-swagger"
 )
 
 type Person struct {
