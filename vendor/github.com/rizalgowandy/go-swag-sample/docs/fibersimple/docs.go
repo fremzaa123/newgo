@@ -56,50 +56,8 @@ var doc = `{
                     }
                 }
             }
-        },
-            "/users": {
-                "get": {
-                    "summary": "Query and display data",
-                    "description": "Query data from the database and display it.",
-                    "tags": [
-                        "TEST"
-                    ],
-                    "responses": {
-                        "200": {
-                            "description": "Successful operation",
-                            "content": {
-                                "application/json": {
-                                    "schema": {
-                                        "type": "array",
-                                        "items": {
-                                            "$ref": "#/components/schemas/Person"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "components": {
-            "schemas": {
-                "Person": {
-                    "type": "object",
-                    "properties": {
-                        "Rid": {
-                            "type": "integer"
-                        },
-                        "Ragid": {
-                            "type": "integer"
-                        },
-                        "Rstatus": {
-                            "type": "integer"
-                        }
-                    }
-                }
-            }
         }
+    }
 }`
 
 type swaggerInfo struct {
