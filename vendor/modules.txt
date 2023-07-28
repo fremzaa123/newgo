@@ -1,13 +1,22 @@
 # github.com/KyleBanks/depth v1.2.1
 ## explicit
 github.com/KyleBanks/depth
-# github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
-## explicit
-github.com/alecthomas/template
-github.com/alecthomas/template/parse
 # github.com/andybalholm/brotli v1.0.5
 ## explicit; go 1.12
 github.com/andybalholm/brotli
+<<<<<<< HEAD
+=======
+# github.com/bytedance/sonic v1.8.0
+## explicit; go 1.15
+# github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311
+## explicit; go 1.15
+# github.com/gin-contrib/sse v0.1.0
+## explicit; go 1.12
+# github.com/gin-gonic/gin v1.9.0
+## explicit; go 1.18
+# github.com/go-gl/mathgl v1.0.0
+## explicit; go 1.11
+>>>>>>> parent of 862a1a5 (success query)
 # github.com/go-openapi/jsonpointer v0.20.0
 ## explicit; go 1.18
 github.com/go-openapi/jsonpointer
@@ -61,11 +70,14 @@ github.com/mattn/go-runewidth
 # github.com/rivo/uniseg v0.4.4
 ## explicit; go 1.18
 github.com/rivo/uniseg
+<<<<<<< HEAD
 # github.com/rizalgowandy/go-swag-sample v0.0.0-20210905074156-7776ad68c37c
 ## explicit; go 1.14
 github.com/rizalgowandy/go-swag-sample/docs/fibersimple
 # github.com/rogpeppe/go-internal v1.8.0
 ## explicit; go 1.11
+=======
+>>>>>>> parent of 862a1a5 (success query)
 # github.com/swaggo/fiber-swagger v1.3.0
 ## explicit; go 1.15
 github.com/swaggo/fiber-swagger
@@ -75,6 +87,13 @@ github.com/swaggo/files
 # github.com/swaggo/swag v1.16.1
 ## explicit; go 1.18
 github.com/swaggo/swag
+<<<<<<< HEAD
+=======
+# github.com/twitchyliquid64/golang-asm v0.15.1
+## explicit; go 1.13
+# github.com/ugorji/go/codec v1.2.9
+## explicit; go 1.11
+>>>>>>> parent of 862a1a5 (success query)
 # github.com/valyala/bytebufferpool v1.0.0
 ## explicit
 github.com/valyala/bytebufferpool
@@ -88,6 +107,13 @@ github.com/valyala/fasthttp/stackless
 # github.com/valyala/tcplisten v1.0.0
 ## explicit; go 1.12
 github.com/valyala/tcplisten
+<<<<<<< HEAD
+=======
+# golang.org/x/arch v0.0.0-20210923205945-b76863e36670
+## explicit; go 1.17
+# golang.org/x/crypto v0.11.0
+## explicit; go 1.17
+>>>>>>> parent of 862a1a5 (success query)
 # golang.org/x/net v0.12.0
 ## explicit; go 1.17
 golang.org/x/net/webdav
@@ -105,6 +131,13 @@ golang.org/x/tools/go/buildutil
 golang.org/x/tools/go/internal/cgo
 golang.org/x/tools/go/loader
 golang.org/x/tools/internal/typeparams
+<<<<<<< HEAD
+=======
+# golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+## explicit; go 1.11
+# google.golang.org/protobuf v1.28.1
+## explicit; go 1.11
+>>>>>>> parent of 862a1a5 (success query)
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
